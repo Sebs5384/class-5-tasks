@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase-5-tarea-2</title>
-    <link rel="stylesheet" href="tarea-2.css">
-</head>
-<header>
+  <head>
+    <title>Class-5-task-2</title>
+    <link rel="stylesheet" href="tarea-2.css" />
+  </head>
+  <header>
     <h1>Good to see you all !</h1>
-    <div>
-    <h2></h2>
-    </div>
-</header>
-<body>
-    <form id="user-info" onsubmit="return false;">
-        <label for="name" class="info-text">Your name:</label>
-        <input type="text" id="user-name" placeholder="Max. 20 characters" maxlength="20" required class="info"><br><br>
-        <label for="last" class="info-text">Your last name:</label>
-        <input type="text" id="user-last" placeholder="Max. 20 characters" maxlength="20" required class="info"><br><br>
-        <label for="age" class="info-text">Your age:</label>
-        <input type="number" id="user-age" placeholder="Optional" max="100" class="info"><br><br>
+  </header>
+  <body>
+    <form id="user-info">
+      <label for="name">Your name:</label>
+      <input type="text" id="user-name" placeholder="Maximum 20 characters" class="user-information" name="user-name" /><br /><br />
+      <label for="last-name">Your last name:</label>
+      <input type="text" id="user-last-name" placeholder="Maximum 20 characters" class="user-information" name="last-name" /><br /><br />
+      <label for="age">Your age:</label>
+      <input type="number" id="user-age" placeholder="Optional" class="user-information" name="age" /><br /><br />
 
-        <button type="submit" id="info-show" value="submit">Show user's info</button><br><br>
-        <textarea name="area" id="info-textarea" cols="30" rows="5"></textarea>
+      <button type="submit" id="information-submit" value="submit">Display Info</button><br /><br />
+      <textarea name="textarea" id="text-area" cols="30" rows="5"></textarea>
     </form>
-<script src="./tarea-2.js"></script>
-</body>
+    <script src="tarea-2.js"></script>
+    <script src="tarea-2-validaciones.js"></script>
+    <script src="tarea-2-testing.js"></script>
+  </body>
 </html>

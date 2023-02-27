@@ -1,21 +1,33 @@
-const $buttonCalculate = document.querySelector("#button-calculate")
-$buttonCalculate.onclick = function(){
+const videoTime = document.querySelector("#inputs-form");
+const totalDuration = document.querySelector("#total-duration");
 
-    let videoTime = document.querySelector(".time")
-    let totalTime = 0
-    for (let i = 0; i <videoTime.length; i += 3){
-      let hours = parseInt(videoTime[i].value || 0)
-      let minutes = parseInt(videoTime[i + 1].value || 0)
-      let seconds = parseInt(videoTime[i + 2].value || 0)
-      totalTime += (hours * 3600) + (minutes * 60) + seconds
-    }
-    let totalHours = Math.floor(totalTime / 3600);
-    let totalMinutes = Math.floor((totalTime % 3600) / 60)
-    let totalSeconds = totalTime % 60
+document.querySelector("#button-calculate").onclick = function () {
+  const hours = videoTime.hours;
+  const minutes = videoTime.minutes;
+  const seconds = videoTime.seconds;
+  if (validateVideoTime(hours, minutes, seconds) !== "videoTimeValidated") {
+    return;
+  }
+  const durationResults = calculateVideoTime(hours, minutes, seconds);
+  totalDuration.textContent = durationResults;
+};
 
-    document.querySelector("#total-duration").textContent = `${totalHours} hours ${totalMinutes} minutes and ${totalSeconds} seconds`
+function calculateVideoTime(hours, minutes, seconds) {
+  let totalTime = 0;
+  for (let i = 0; i < hours.length; i++) {
+    const $hours = Number(hours[i].value || 0);
+    totalTime += $hours * 3600;
+  }
+  for (let i = 0; i < minutes.length; i++) {
+    const $minutes = Number(minutes[i].value || 0);
+    totalTime += $minutes * 60;
+  }
+  for (let i = 0; i < seconds.length; i++) {
+    const $seconds = Number(seconds[i].value || 0);
+    totalTime += $seconds;
+  }
+  const totalHours = Math.floor(totalTime / 3600);
+  const totalMinutes = Math.floor((totalTime % 3600) / 60);
+  const totalSeconds = totalTime % 60;
+  return `${totalHours} hours ${totalMinutes} minutes and ${totalSeconds} seconds`;
 }
-
-
-
-

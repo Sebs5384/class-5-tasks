@@ -1,37 +1,35 @@
 html {
-    background-color: rosybrown;
+  background-color: rosybrown;
 }
 h1 {
-    background-color: peachpuff;
-    border-radius: 10px;
-    width: 285px;
-    position: relative;
-    bottom: 10px;
-    left: 550px;
-    text-align: center;
+  background-color: peachpuff;
+  border-radius: 10px;
+  width: 285px;
+  position: relative;
+  bottom: 10px;
+  left: 550px;
+  text-align: center;
 }
 
 h2 {
-    background-color: peachpuff;
-    border-radius: 10px;
-    width: 265px;
-    position: relative;
-    bottom: 10px;
-    left: 550px;
-    text-align: center;
+  background-color: peachpuff;
+  border-radius: 10px;
+  width: 265px;
+  position: relative;
+  bottom: 10px;
+  left: 550px;
+  text-align: center;
 }
 
 #user-info {
-    text-align: center;
+  text-align: center;
 }
 
 .info-text {
-    background-color: peachpuff;
-    border-radius: 10px;
+  background-color: peachpuff;
+  border-radius: 10px;
 }
 
-#info-textarea{
-    text-align: center;
+#info-textarea {
+  text-align: center;
 }
-
-

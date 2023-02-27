@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Clase-5-Tarea-3</title>
-  <link rel="stylesheet" href="Tarea-3.css">
-</head>
-<body>
-  <h1>Video length calculator for R/ARGENTINA-PROGRAMA</h1>
+  <head>
+    <title>Clase-5-Tarea-3</title>
+    <link rel="stylesheet" href="tarea-3.css" />
+  </head>
 
-  <form name="form-videos" class="time" id="form-id" onsubmit="return false;">
-    
-    <label for="videos1">Insert Arg-programa-video-1 length</label><br><br>
-    <input type="number" id="hours-textbox-1" placeholder="Hours" required min="0">
-    <input type="number" id="minutes-textbox-1" placeholder="Minutes" required min="0" max="60">
-    <input type="number" id="seconds-textbox-1" placeholder="Seconds" required min="0" max="60"><br><br>
-    <label for="videos2">Insert Arg-programa-video-2 length</label><br><br>
-    <input type="number" id="hours-textbox-2"   placeholder="Hours"required min="0">
-    <input type="number" id="minutes-textbox-2" placeholder="Minutes" required min="0" max="60">
-    <input type="number" id="seconds-textbox-2" placeholder="Seconds" required min="0" max="60"><br><br>
-    <label for="videos3">Insert Arg-programa-video-3 length</label><br><br>
-    <input type="number" id="hours-textbox-3"   placeholder="Hours" required min="0">
-    <input type="number" id="minutes-textbox-3" placeholder="Minutes" required min="0" max="60">
-    <input type="number" id="seconds-textbox-3" placeholder="Seconds" required min="0" max="60"><br><br>
-    <label for="videos4">Insert Arg-programa-video-4 length</label><br><br>
-    <input type="number" id="hours-textbox-4"   placeholder="Hours" required min="0">
-    <input type="number" id="minutes-textbox-4" placeholder="Minutes" required min="0" max="60">
-    <input type="number" id="seconds-textbox-4" placeholder="Seconds" required min="0" max="60"><br><br>
-    <label for="videos5">Insert Arg-programa-video-5 length</label><br><br>
-    <input type="number" id="hours-textbox-5"   placeholder="Hours" required min="0">
-    <input type="number" id="minutes-textbox-5" placeholder="Minutes"required min="0" max="60">
-    <input type="number" id="seconds-textbox-5" placeholder="Seconds" required min="0" max="60"><br><br>
-  
-  </form><br>
-  <button type="button" id="button-calculate">Calculate Total</button><br><br>
-  <strong id="total-duration"></strong>
+  <body>
+    <h1>Video length calculator for R/ARGENTINA-PROGRAMA</h1>
 
-  <script src="./Tarea-3.js"></script>
-</body>
+    <form id="inputs-form">
+      <label for="videos1">Insert Arg-programa-video-1 length</label><br /><br />
+      <input type="number" id="hours-textbox-1" placeholder="Hours" required min="0" name="hours" />
+      <input type="number" id="minutes-textbox-1" placeholder="Minutes" required min="0" max="60" name="minutes" />
+      <input type="number" id="seconds-textbox-1" placeholder="Seconds" required min="0" max="60" name="seconds" /><br /><br />
+      <label for="videos2">Insert Arg-programa-video-2 length</label><br /><br />
+      <input type="number" id="hours-textbox-2" placeholder="Hours" required min="0" name="hours" />
+      <input type="number" id="minutes-textbox-2" placeholder="Minutes" required min="0" max="60" name="minutes" />
+      <input type="number" id="seconds-textbox-2" placeholder="Seconds" required min="0" max="60" name="seconds" /><br /><br />
+      <label for="videos3">Insert Arg-programa-video-3 length</label><br /><br />
+      <input type="number" id="hours-textbox-3" placeholder="Hours" required min="0" name="hours" />
+      <input type="number" id="minutes-textbox-3" placeholder="Minutes" required min="0" max="60" name="minutes" />
+      <input type="number" id="seconds-textbox-3" placeholder="Seconds" required min="0" max="60" name="seconds" /><br /><br />
+      <label for="videos4">Insert Arg-programa-video-4 length</label><br /><br />
+      <input type="number" id="hours-textbox-4" placeholder="Hours" required min="0" name="hours" />
+      <input type="number" id="minutes-textbox-4" placeholder="Minutes" required min="0" max="60" name="minutes" />
+      <input type="number" id="seconds-textbox-4" placeholder="Seconds" required min="0" max="60" name="seconds" /><br /><br />
+      <label for="videos5">Insert Arg-programa-video-5 length</label><br /><br />
+      <input type="number" id="hours-textbox-5" placeholder="Hours" required min="0" name="hours" />
+      <input type="number" id="minutes-textbox-5" placeholder="Minutes" required min="0" max="60" name="minutes" />
+      <input type="number" id="seconds-textbox-5" placeholder="Seconds" required min="0" max="60" name="seconds" /><br /><br />
+    </form>
+    <br />
+    <button type="button" id="button-calculate">Calculate Total</button><br /><br />
+    <strong id="total-duration"></strong>
+
+    <script src="tarea-3.js"></script>
+    <script src="tarea-3-validaciones.js"></script>
+    <script src="tarea-3-testing.js"></script>
+  </body>
 </html>
-
-

@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Monthly income calculator</title>
-    <link rel="stylesheet" href="tarea-1.css">
-</head>
+  <head>
+    <title>Class-5</title>
+    <link rel="stylesheet" href="tarea-1.css" />
+  </head>
 
-<header>
+  <header>
     <h1>Calculate your monthly income !</h1>
-    <h2>I've designed this tool to give you a quick response into how much you winning per month !</h2>
-</header>
+    <h2>I've designed this tool to give you a quick response into how much your salary is per month !</h2>
+  </header>
 
-<body>
-    
-<form>
-    
-    <label for="anual">Insert your anual income:</label>
-    <input type="number" id="anual-income" placeholder="e.g $5000">
-    <label for="monthly">Your monthly income is:</label>
-    <input type="text" disabled id="monthly-income">
-    <button type="button" id="calculate-income">Calculate !</button>
-    <button type="reset">Clean Fields</button>
+  <body>
+    <form id="income-calculator">
+      <label for="anual"><strong>Your anual income:</strong></label>
+      <input type="number" id="anual-salary" placeholder="$5000" name="anual-income" />
+      <label for="monthly"><strong>Your monthly income is:</strong></label>
+      <input type="text" disabled id="monthly-salary" name="monthly-income" />
+      <button type="button" id="calculate-button">Calculate</button>
+      <button type="reset">Clean Fields</button><br /><br />
+      <strong id="monthly-income-results"></strong>
+    </form>
 
-</form>
-
-<script src="./tarea-1.js"></script>    
-</body>
+    <script src="tarea-1.js"></script>
+    <script src="tarea-1-validaciones.js"></script>
+    <script src="tarea-1-test.js"></script>
+  </body>
 </html>
